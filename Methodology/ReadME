@@ -1,1 +1,12 @@
 
+This directory consists of three files which follows the execution of 2 base classifiers along with a stacked ensemble model. 
+
+The features_all.ipynb uses the data-'features_all.csv' present in the Data directory.
+The features_basnd.ipynb uses the data-'features_band.csv' present in the Data directory.
+The features_dwt.ipynb uses the data-'features_dwt.csv' present in the Data directory.
+
+The first base classifier is an RNN+SLP (Recurrent Neural Network + Single Layer Perceptron) model. The model architecture consisted of LSTM (Long Short-Term Memory) layers including a dropout layer to enhance generalization. The final prediction layer utilized a softmax activation function to classify patients into five different categories (CPC values 1 to 5). 
+
+The second base classifier was an SVM model using 'The Gaussian Elastic Metric (GEM) kernel', which harnessed the strengths of RBF kernels while incorporating the flexibility of DTW.
+
+We implemented a stacked ensemble model to enhance the predictive performance of our model. The ensemble model involved a two-step process: first, we created a stacked model input dataset by combining the predictions of the individual models i.e., the base classifiers. This process allowed us to capture the wealth of information from each model and transform it into a consolidated representation. Subsequently, we trained a meta-classifier (KNN) on this stacked dataset.
