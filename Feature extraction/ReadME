@@ -1,1 +1,7 @@
+This directory consists of MATLAB code to extract data and features from a respective patient directory. There were a total of 606 patients from which data was extracted. 
 
+We iterated through all the 606 patient directories, extracted the required features, and appended them to a CSV file.
+
+There were seven patient features included in our research, namely- Age, Male, Female, Other, ”TTM”, ”Vfib”, and ”ROSC”. Male, Female, and Other were denoted in binary. These features were extracted from a text file that was present in each patient directory
+
+Power spectral density features were extracted using Welch's method. Alternatively, DWT features were extracted as well.
