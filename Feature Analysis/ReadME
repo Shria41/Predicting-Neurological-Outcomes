@@ -1,1 +1,9 @@
+We conducted an analysis on the power spectra features. 
 
+power_code.py consists of code that calculates the average power in each of the frequecny bands, namely, alpha, beta, theta and delta.
+
+power1.py prints the analysis found from the power spectra.
+
+Results: We observed that individuals with good recovery exhibited relatively lower average spectral power in the alpha and beta bands compared to those with poor recovery, suggesting a potential association between reduced activity in these frequency ranges and more favorable neurological outcomes. 
+We also saw that particularly in the delta and theta frequency bands,  individuals with good recovery exhibited slightly higher average spectral power compared to those with poor recovery. 
+We also observed an overall higher average spectral power in the good recovery group compared to those with poor recovery.
