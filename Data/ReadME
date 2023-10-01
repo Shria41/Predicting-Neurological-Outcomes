@@ -1,1 +1,5 @@
-
+This directory consists of the features extracted from patients appended to a csv file. 
+'features_all.csv' consists of power spectral density features that were extracted using the Welch method. 
+The 'features_band.csv' file contains a reduced set of power spectral density features. 
+This reduction was guided by the 'Feature Analysis' conducted, which led to the inclusion of delta and theta band features for patients with a good recovery and alpha and beta band features for those with a poor recovery.
+'features_dwt.csv' consists of features extracted using the Discrete Wavelet Transform technique.
