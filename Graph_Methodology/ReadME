@@ -1,1 +1,3 @@
+Graph 2:
+EEG Data is extracted from the features.csv file, and a fully connected graph is created for each sample using Gaussian Similarity for edge weights. A GNN model is created to make the graph predictions from 1-5. Here, first convolution layer is applied along with ReLU function, followed by second convolution layer, and finally global mean pool is used to find the mean of all node classifications to give graph classification. Finally, the GNN model is trained and evaluated on the test set.
 
